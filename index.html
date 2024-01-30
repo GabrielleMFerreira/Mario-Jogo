@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Mario</title>
+            <!-- fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+            <!-- styes -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    
+</head>
+<body>
+    <audio id="bgm" autoplay="" loop  >
+        <source src="./src/audio/thema-mario.mp3 " type="audio/mp3"/>
+      </audio>  
+<div class="game-board">
+
+    <img src="./src/imagens/mario.gif" class="mario">
+    <img src="./src/imagens/pipe.png" class="pipe">
+    <img src="./src/imagens/clouds1.png" class="clouds">
+    <!-- <img src="./src/imagens/banzai-bill.png" class="banzil"> -->
+</div>
+
+<p id="text-start">Para jogar, pressione qualquer tecla!</p>
+
+<button class="reset" onclick=
+"window.location.reload()">RESET</button>
+
+
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
